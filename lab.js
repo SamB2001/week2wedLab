@@ -279,8 +279,32 @@ let gandalf = new Wizard (
 */
 
 //Code Here
-
-  
+class Phone{
+  constructor(brand, model, storage, color, price, sold){
+    this.brand = brand
+    this.model = model
+    this.storage = storage
+    this.color = color
+    this.price = price
+    this.sold = sold  
+  }
+  sell(){
+    Phone.sold = true
+    console.log(`${this.brand} ${this.model} has been sold`)
+  }
+  changePrice(newPrice){
+    this.newPrice = newPrice
+  }
+}
+let iPhone = new Phone(
+  'iPhone',
+  'X',
+  150,
+  'Red',
+  1000,
+  false
+)
+  // iPhone.sell()
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -292,16 +316,41 @@ let gandalf = new Wizard (
 */
 
 //Code Here
-
+let android = new Phone (
+  'Galaxy',
+  'S',
+  100,
+  'Midnight Black',
+  700,
+  false
+)
+let windows = new Phone (
+  'Windowfone',
+  'lil fold',
+  150,
+  'Ocean blue',
+  1300,
+  false
+)
+let nokia = new Phone (
+  'Brick',
+  'Flick',
+  174,
+  'Brick red',
+  2000,
+  false
+)
 /* 
-  Call the changePrice function on one of your phones, 
-  don't forget to pass in a new price 
+Call the changePrice function on one of your phones, 
+don't forget to pass in a new price 
 
-  Then console.log that object to see the price change
+Then console.log that object to see the price change
 */ 
 
 //Code Here 
 
+nokia.changePrice(500)
+// console.log(nokia)
 
 /*
   Now call the sell method on one of your other phone objects
@@ -310,7 +359,8 @@ let gandalf = new Wizard (
 */
 
 //Code Here 
-
+nokia.sell(true)
+// console.log(nokia)
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
@@ -330,7 +380,8 @@ const colors = {
 
 //Code Here 
 
-
+let colorsCopy = {...colors};
+console.log(colorsCopy)
 
 /*
  Now use the spread operator to combine the following 2 objects into one. 
@@ -357,10 +408,10 @@ const shippingInfo = {
 //do not edit the objects above
 
 //Code Here
-
+let helensInfo = {...contactInfo, ...shippingInfo}
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
-
+console.log(helensInfo)
 
 //////////////////////////// PROBLEM 16 ////////////////////////////
 
@@ -375,7 +426,16 @@ const shippingInfo = {
 */
 
 //Code Here 
-
+class Vehicle {
+  constructor(capacity, color, mileage){
+  this.capacity = capacity
+  this.color = color
+  this.mileage = mileage
+  }
+  move(miles){
+    
+  }
+}
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
