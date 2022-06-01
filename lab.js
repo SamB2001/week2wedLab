@@ -10,7 +10,7 @@ let me = {
   name: 'Sam',
   age: '21'
 }
-
+// console.log(me)
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
 //Create an object saved to the variable dog.
@@ -21,22 +21,27 @@ let me = {
 //Code here
 
 let dog = {
-  
+  name: 'Buster',
+  color: 'b&w',
+  age: '12',
+  goodBoy: true
 }
-
+// console.log(dog)
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
 
-
+let dogName = dog.name
+// console.log(dogName)
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
 
-
+let {color} = dog
+// console.log(color)
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
 /*
@@ -45,7 +50,14 @@ let dog = {
 */
 
 //Code here
-
+let favoriteThings = {
+  band: 'Suicideboys',
+  food: '',
+  person: 'Brennon',
+  book: '',
+  movie: 'Baby Driver',
+  holiday: 'Thanksgiving'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
@@ -53,15 +65,18 @@ let dog = {
 
 //Code here
 
-
+favoriteThings.car = 'My car'
+favoriteThings['show'] = ['Fullmetal Alchemist']
+// console.log(favoriteThings)
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
 */
 
 //Code here
-
-
+favoriteThings.food ='chicken nuggets'
+favoriteThings.book = 'Harry potter'
+// console.log(favoriteThings)
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
@@ -79,7 +94,8 @@ var carDetails = {
 
 //Code Here
 
-
+let {color: bestColor, make: bestMake, model: bestModel, year: bestYear} = carDetails
+// console.log(bestColor)
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
