@@ -135,8 +135,21 @@ let greetingPrint = greeting(greetingParam)
 
 //Code Here
 
+let states ={
+  utah: 122,
+  california: 400,
+  texas: 250,
+  arizona: 158
+}
 
-
+function totalPopulation(obj) {
+let utah = states.utah
+let california = states.california
+let texas = states.texas
+let arizona = states.arizona
+}
+let {utah: state1, california: state2, texas: state3, arizona: state4} = states
+// console.log(state1 + state2 + state3 + state4)
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
 /*
@@ -148,9 +161,23 @@ let greetingPrint = greeting(greetingParam)
 */
 
 //Code Here
+arr = []
+let nutrition ={
+  carb: '89',
+  fat: '16',
+  protein: '68'
+}
 
-
-
+function ingredients(obj) {
+  let carb = nutrition.carb
+  let fat = nutrition.fat
+  let protein = nutrition.protein
+}
+let {carb: goodShit, fat: ehShit, protein: realGoodShit} = nutrition
+arr.push(goodShit)
+arr.push(ehShit)
+arr.push(realGoodShit)
+// console.log(arr)
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
 var user = {
@@ -170,8 +197,9 @@ var user = {
 */
 
 //Code Here
-
-
+user.name = 'Bryan G. Smith'
+user.email = 'bryan.smith@devmounta.in'
+// console.log(user)
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
