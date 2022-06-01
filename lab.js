@@ -104,15 +104,23 @@ let {color: bestColor, make: bestMake, model: bestModel, year: bestYear} = carDe
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
+let greetingParam ={
+  title: 'Dr.',
+  firstName: 'Alex',
+  lastName: 'Jones'
 
+}
 function greeting( obj ) {
   //Code Here
-  
+  let title = greetingParam.title
+  let firstName = greetingParam.firstName
+  let lastName = greetingParam.lastName
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
+let greetingPrint = greeting(greetingParam)
+// console.log(greetingPrint)
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
