@@ -206,8 +206,8 @@ user.email = 'bryan.smith@devmounta.in'
 */
 
 //Code Here
-
-
+delete user.age
+// console.log(user)
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
   Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
@@ -217,8 +217,19 @@ user.email = 'bryan.smith@devmounta.in'
 
 //Code here
 
-
-
+class Cat {
+  constructor(name, age, color){
+    this.name = name
+    this.age = age
+    this.color = color
+  }
+}
+let skittles = new Cat(
+  'Skittles',
+  '16',
+  'Black'
+)
+// console.log(skittles.name)
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
   Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
@@ -228,7 +239,22 @@ user.email = 'bryan.smith@devmounta.in'
 */
 
 //Code here
-
+class Wizard {
+  constructor(name, age, favoriteSpell){
+    this.name = name
+    this.age = age
+    this.favoriteSpell = favoriteSpell
+  }
+  saySpell() {
+    console.log(`${this.name} has cast ${this.favoriteSpell}`)
+  }
+}
+let gandalf = new Wizard (
+  'Gandalf',
+  '3000',
+  'Abracadabra'
+) 
+// gandalf.saySpell()
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
