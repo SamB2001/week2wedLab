@@ -6,7 +6,10 @@
 
 //Code here
 
-
+let me = {
+  name: 'Sam',
+  age: '21'
+}
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
@@ -17,7 +20,9 @@
 
 //Code here
 
-
+let dog = {
+  
+}
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
